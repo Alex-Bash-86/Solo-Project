@@ -7,7 +7,7 @@ if (args.length !== 1) {
 
 // Kontrolliert das eingegebene Wort
 if (args[0] != "rock" && args[0] != "paper" && args[0] != "scissors") {
-  console.error("Wrong Input");
+  console.error(`Wrong Input! Choose between "rock", "paper" or "scissors"`);
   return;
 }
 
@@ -18,7 +18,7 @@ const rdmNumber = Math.floor(Math.random() * 3);
 // Wandelt die Zahl zu einem der Strings aus dem Array um
 const pcChoice = choice[rdmNumber];
 
-console.log(pcChoice);
+// console.log(pcChoice);
 
 if (args[0] === pcChoice) {
   console.log(`You chose ${args[0]}. Computer chose ${pcChoice}. DRAW !`);
