@@ -1,4 +1,4 @@
-// Wichtig weil node die ersten beides Positionen des arrays überspringt und die einegebenen Zahlen/Wörter als Parameter nimmt
+// Wichtig damit node die ersten beides Positionen des arrays überspringt und mit den einegebenen Zahlen/Wörter arbeitet
 const args = process.argv.slice(2);
 if (args.length !== 1) {
   console.error("Please provide exactly one string!");
@@ -14,6 +14,8 @@ if (args[0] != "rock" && args[0] != "paper" && args[0] != "scissors") {
 const choice = ["rock", "paper", "scissors"];
 
 // Generiert eine Zahl von 0 bis 2
+// Es wird eine Zufallszahl zwischen 0 und 1 generiert und * 3 multipliziert
+// Math.floor rundet diese ab so dass nur die Zahlen von 1 bis 3 möglich sind
 const rdmNumber = Math.floor(Math.random() * 3);
 // Wandelt die Zahl zu einem der Strings aus dem Array um
 const pcChoice = choice[rdmNumber];
