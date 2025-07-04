@@ -29,7 +29,9 @@ if (args[0] === pcChoice) {
   (args[0] === "paper" && pcChoice === "rock") ||
   (args[0] === "scissors" && pcChoice === "paper")
 ) {
-  console.log(`You chose ${args[0]}. Computer chose ${pcChoice}. You win!`);
+  console.log(
+    `You chose ${args[0]}. Computer chose ${pcChoice}. Winner, winner chicken dinner!`
+  );
 } else {
   console.log(`You chose ${args[0]}. Computer chose ${pcChoice}. You lose!`);
 }
